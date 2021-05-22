@@ -20,6 +20,28 @@ namespace DepartmentalStore
             AddSupplier();
             AddSupplierProduct();
 
+            Console.WriteLine("Query Staff using Name");
+            DatabaseQueries.StaffQueryUsingName();
+            Console.WriteLine("\nQuery Staff using Phone Number");
+            DatabaseQueries.StaffQueryUsingEmail();
+            Console.WriteLine("\nQuery Staff using  thier Role");
+            DatabaseQueries.StaffQueryUsingRole();
+            Console.WriteLine("\nQuery Product using Name");
+            DatabaseQueries.ProductQueryUsingName();
+
+
+            DatabaseQueries.NumberOfProductOutOfStock();
+            Console.WriteLine("\n List of supplier");
+            DatabaseQueries.ListOfSuppliers();
+
+            DatabaseQueries.QueryProduct();
+            Console.WriteLine("Number of product Within a category");
+            DatabaseQueries.NumberofProductswithinacategory();
+            Console.WriteLine("Query Product Based on Instock");
+            DatabaseQueries.ProductQueryBasedOnOutstock();
+            Console.WriteLine("Query Product Based on Selling Price");
+            DatabaseQueries.ProductQueryBasedOnSellingPrice();
+
         }
         //Insert Values in Role Table
         public static void AddRole()
